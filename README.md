@@ -1,12 +1,17 @@
 # moshishibie
 模式识别
 经典三维重建系统的整个pipeline从相机标定、基础矩阵与本质矩阵估计、特征匹配到运动恢复结构（SFM），从SFM到稠密点云重建、表面重建、纹理贴图。
+
 ![image](https://user-images.githubusercontent.com/90848881/233792940-203f7ded-66a5-4bc1-b024-94c02a19f1fe.png)
+
 三维重建的 SfM (Structure from Motion) 算法是通过多张二维图片来重建三维场景的算法。
 
 传统的三维重建算法可以分为：
+
 ![image](https://user-images.githubusercontent.com/90848881/233793926-84a56bef-bf19-40fe-84b7-44cfab4850a3.png)
+
 ![image](https://user-images.githubusercontent.com/90848881/233793937-efd2f1af-71d2-4e2a-8939-58793d5df6da.png)
+
 根据采集设备是否主动发射测量信号，分为两类：基于主动视觉理论和基于被动视觉的三维重建方法。
 
 主动视觉三维重建方法：使用RGBD深度图和点云进行三维重建，主要包括结构光法、TOF飞行时间法、激光扫描法。每个点到深度相机所在的垂直平面的距离值。这个距离值被称为深度值（depth）
